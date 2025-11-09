@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIP-VPN</title>
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- swiper js connect -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav
+        class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- logo -->
+        <a href="/">
+          <div class="text-2xl font-extrabold flex items-center gap-2">
+            <img src="images/logo.png" alt="VIP VPN" class="h-8" />
+            <span class="text-primary"> VIP-VPN</span>
+          </div>
+        </a>
+        <!-- menu items -->
+        <ul class="hidden md:flex space-x-8 font-semibold text-sm">
+          <li>
+            <a href="#home" class="text-gray-600 hover:text-primary">About</a>
+          </li>
+          <li>
+            <a href="#features" class="text-gray-600 hover:text-primary"
+              >Fetures</a
+            >
+          </li>
+          <li>
+            <a href="#pricing" class="text-gray-600 hover:text-primary"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="text-gray-600 hover:text-primary"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="#subscribe" class="text-gray-600 hover:text-primary"
+              >Help</a
+            >
+          </li>
+        </ul>
+        <!-- Auth Button -->
+        <div class="space-x-4 sm:inline-flex">
+          <button class="text-gray-600 hover:text-primary hidden sm:block">
+            Sign In
+          </button>
+          <button
+            class="bg-primary text-white hover:bg-red-600 px-4 py-2 rounded-md cursor-pointer sm:block"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section
+      class="max-w-[1440px] container mx-auto flex flex-col md:flex-row items-center gap-12 px-4 py-12 sm:px-2"
+      id="home"
+    >
+      <!-- left content -->
+      <div class="w-full mb-8 md:mb-0 space-y-8 md:w-1/2" data-aos="fade-right">
+        <h1
+          class="lg:text-6xl md:text-5xl text-4xl font-bold text-heading-text leading-tight"
+        >
+          Want anything to be <br class="lg:block hidden" />
+          easy with VIP-VPN
+        </h1>
+        <p class="text-primary-text leading-relaxed max-w-xl">
+          Provide a network for all your needs with ease and fun using VIP-VPN
+          discover interesting features from us.
+        </p>
+        <button
+          class="bg-primary text-white px-12 py-4 rounded-lg hover:bg-red-600 shadow-lg hover:shadow-xl shadow-red-300"
+        >
+          Get Started
+        </button>
+      </div>
+      <!-- right content -->
+      <div class="md:w-1/2" data-aos="fade-left">
+        <img src="images/banner.png" alt="banner image" class="w-full" />
+      </div>
+    </section>
+    <!-- Static section -->
+    <section class="section-container">
+      <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+        <div
+          class="flex flex-col md:flex-row justify-around items-center divide-y md:divide-y-0 md:divid-x divide-gray-200"
+        >
+          <!-- User stats -->
+          <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+            <div class="p-5 bg-secondary/65 rounded-full">
+              <img src="images/user.png" alt="" class="size-8 shrink-0" />
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold text-gray-900">90+</h3>
+              <p class="text-primary-text">Users</p>
+            </div>
+          </div>
+          <!-- Location Stats -->
+          <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+            <div class="p-5 bg-secondary/65 rounded-full">
+              <img src="images/location.png" alt="" class="size-8 shrink-0" />
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold text-gray-900">30+</h3>
+              <p class="text-primary-text">Location</p>
+            </div>
+          </div>
+          <!-- server stats -->
+          <div class="flex items-center gap-6 px-12 py-6 md:py-0">
+            <div class="p-5 bg-secondary/65 rounded-full">
+              <img src="images/storage.png" alt="" class="size-8 shrink-0" />
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold text-gray-900">50+</h3>
+              <p class="text-primary-text">Servers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features section -->
+    <section class="section-container" id="features">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <!-- left contain -->
+        <div class="md:w-1/2 flex items-center" data-aos="fade-left">
+          <img src="images/features.png" alt="" />
+        </div>
+        <!-- right contain -->
+        <div
+          class="md:w-1/2 space-y-8 flex flex-col justify-center"
+          data-aos="fade-right"
+        >
+          <h2 class="text-heading-text text-4xl font-bold leading-tight">
+            We Provide Many Features You Can Use
+          </h2>
+          <p class="text-primary-text leading-relaxed">
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </p>
+          <!-- feature list -->
+          <ul class="space-y-4">
+            <li class="flex gap-2">
+              <div>
+                <img src="images/green-tick.png" alt="tick sign" />
+              </div>
+              <span class="font-semibold">Powerful online protection.</span>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <img src="images/green-tick.png" alt="tick sign" />
+              </div>
+              <span class="font-semibold">Internet without border.</span>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <img src="images/green-tick.png" alt="tick sign" />
+              </div>
+              <span class="font-semibold">Supercharged VPN.</span>
+            </li>
+            <li class="flex gap-2">
+              <div>
+                <img src="images/green-tick.png" alt="tick sign" />
+              </div>
+              <span class="font-semibold">No specific time limits.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="bg-gray-50" id="pricing">
+      <div class="section-container" data-aos="fade-up">
+        <!-- section header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-4xl font-bold text-heading-text mb-4">
+            Choose Your Plan
+          </h2>
+          <p class="text-primary-text">
+            Let's choose the package that is best for you and explore it happily
+            and cheerfully.
+          </p>
+        </div>
+        <!-- pricing cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-8">
+          <!-- free plan -->
+          <div
+            class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-400 transition duration-300 hover:scale-110 space-y-5"
+          >
+            <img src="images/box.png" alt="Gift Box image" class="w-32 mb-8" />
+            <h3 class="text-2xl font-bold">Free Plan</h3>
+            <ul class="space-y-4 mb-8 flex-grow">
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Unlimited Bandwitch</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Encrypted Connection</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>No Traffic Logs</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Works on All Devices</span>
+              </li>
+            </ul>
+
+            <!-- button -->
+            <div class="flex flex-col text-center gap-4">
+              <div>Free</div>
+              <button
+                class="border-2 border-primary px-10 py-2 rounded-lg bg-red-50 font-semibold text-primary hover:text-white hover:bg-red-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- Standard Plan -->
+          <div
+            class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-400 transition duration-300 hover:scale-110 space-y-5"
+          >
+            <img src="images/box.png" alt="Gift Box image" class="w-32 mb-8" />
+            <h3 class="text-2xl font-bold">Standard Plan</h3>
+            <ul class="space-y-4 mb-8 flex-grow">
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Unlimited Bandwitch</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Encrypted Connection</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Yes Traffic Logs</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Connect Anyware</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Works on All Devices</span>
+              </li>
+            </ul>
+
+            <!-- button -->
+            <div class="flex flex-col text-center gap-4">
+              <div>
+                <span class="text-2xl text-primary-text font-bold">9$</span> /
+                Month
+              </div>
+              <button
+                class="border-2 border-primary px-10 py-2 rounded-lg bg-red-50 font-semibold text-primary hover:text-white hover:bg-red-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <!-- Pro plan -->
+          <div
+            class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-400 transition duration-300 hover:scale-110 space-y-5"
+          >
+            <img src="images/box.png" alt="Gift Box image" class="w-32 mb-8" />
+            <h3 class="text-2xl font-bold">Pro Plan</h3>
+            <ul class="space-y-4 mb-8 flex-grow">
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Unlimited Bandwitch</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Encrypted Connection</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Yes Traffic Logs</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Works on All Devices</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Get New Features</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <img src="images/tick.png" alt="" class="size-5 shrink-0" />
+                <span>Connect Anyware</span>
+              </li>
+            </ul>
+
+            <!-- button -->
+            <div class="flex flex-col text-center gap-4">
+              <div>
+                <span class="text-2xl text-primary-text font-bold">12$</span> /
+                Month
+              </div>
+              <button
+                class="border-2 border-primary px-10 py-2 rounded-lg bg-red-50 font-semibold text-primary hover:text-white hover:bg-red-500"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Global Network Section -->
+    <section class="section-container">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-1/3 mx-auto">
+          Huge Global Network of Fast VPN
+        </h2>
+        <p class="text-primary-text">
+          See VIP-VPN everywhere to make it easier for you when you move
+          locations.
+        </p>
+      </div>
+      <div class="mb-16">
+        <img
+          src="images/map.png"
+          alt="map image"
+          class="w-full mx-auto opacity-60"
+        />
+      </div>
+      <!-- sponsord logos -->
+      <div class="flex flex-col md:flex-row justify-around gap-12">
+        <img
+          src="images/netflix.png"
+          alt="netflix logo"
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="images/amazon.png"
+          alt="netflix logo"
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="images/reddit.png"
+          alt="netflix logo"
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="images/discord.png"
+          alt="netflix logo"
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="images/spotify.png"
+          alt=""
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section
+      class="max-w-[1440px] container mx-auto px-4 py-24"
+      id="testimonials"
+    >
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-[#0B132A] mb-5">
+          Trusted by Thousands of<br />
+          Happy Customer
+        </h2>
+        <p class="text-[#4F5665] max-w-2xl mx-auto">
+          These are the stories of our customers who have joined us with great
+          pleasure when using this crazy feature.
+        </p>
+      </div>
+
+      <!-- Testimonials Slider -->
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <!-- Testimonials will be inserted here by JavaScript -->
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="flex justify-between items-center mt-12">
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination !relative !bottom-0 !w-auto"></div>
+
+          <!-- Navigation Arrows -->
+          <div class="flex sm:!flex lg:!flex xl:!flex gap-4">
+            <div
+              class="swiper-button-prev !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full border-2 border-[#F53855] text-[#F53855] hover:bg-red-200 hover:text-white transition-all after:!content-['']"
+            >
+              <img
+                src="./images/arrow-left.png"
+                alt="arrow-left"
+                class="w-6 h-6"
+              />
+            </div>
+            <div
+              class="swiper-button-next !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full bg-[#F53855] text-white hover:opacity-90 transition-all after:!content-['']"
+            >
+              <img
+                src="./images/arrow-right.png"
+                alt="arrow-right"
+                class="w-6 h-6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe section -->
+    <section class="section-container" id="subscribe">
+      <div
+        class="bg-white rounded-xl shadow-lg lg:p-16 md:p-12 p-8 hover:shadow-2xl transition-all duration-500"
+        data-aos="fade-up"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+          <!-- left contian -->
+          <div class="space-y-3">
+            <h2
+              class="lg:text-4xl md:text-3xl text-2xl font-extrabold text-heading-text"
+            >
+              Subscribe Now for<br />
+              Get Special Features!
+            </h2>
+
+            <p class="text-primary-text max-w-lg">
+              Let's subscribe with us and find the fun.
+            </p>
+          </div>
+
+          <!-- right contain -->
+          <div>
+            <button
+              class="bg-primary text-white hover:bg-red-600 lg:px-16 md:px-12 md:py-3 lg:py-4 px-8 py-2 rounded-xl hover:opacity-80 transition-all duration-300"
+            >
+              Subscribe Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <!-- footer section -->
+    <footer class="bg-[#F8F8F8]">
+      <div class="section-container">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
+          <!-- brand column -->
+          <div>
+            <div class="flex items-center gap-2 mb-5">
+              <img src="images/logo.png" alt="" class="h-8 shrink-0" />
+              <span class="text-xl font-bold">VIP-VPN</span>
+            </div>
+
+            <p class="text-primary-text mb-8">
+              LaslesVPN is a private virtual network that has unique features
+              and has high security.
+            </p>
+
+            <div class="flex gap-4">
+              <a
+                href="/"
+                class="p-2 rounded-full bg-red-500 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <img src="images/facebook.png" class="size-4" />
+              </a>
+              <a
+                href="/"
+                class="p-2 rounded-full bg-red-500 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <img src="images/twitter.png" class="size-4" />
+              </a>
+              <a
+                href="/"
+                class="p-2 rounded-full bg-red-500 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <img src="images/instagram.png" class="size-4" />
+              </a>
+            </div>
+
+            <p class="mt-2.5">©2025 VIP-VPN</p>
+          </div>
+
+          <!-- Product Column -->
+          <div>
+            <h3 class="font-medium text-lg mb-6">Product</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-primary">Download</a></li>
+              <li><a href="#" class="hover:text-primary">Pricing</a></li>
+              <li><a href="#" class="hover:text-primary">Location</a></li>
+              <li><a href="#" class="hover:text-primary">Servers</a></li>
+              <li><a href="#" class="hover:text-primary">Blogs</a></li>
+            </ul>
+          </div>
+
+          <!-- Engage Column -->
+          <div>
+            <h3 class="font-medium text-lg mb-6">Engage</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-primary">VIP-VPN</a></li>
+              <li><a href="#" class="hover:text-primary">FAQ</a></li>
+              <li><a href="#" class="hover:text-primary">Tutorials</a></li>
+              <li><a href="#" class="hover:text-primary">About Us</a></li>
+              <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Earn Money Column -->
+          <div>
+            <h3 class="font-medium text-lg mb-6">Earn Money</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-primary">Affiliate</a></li>
+              <li><a href="#" class="hover:text-primary">Become Partner</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--app.js-->
+
+    <script src="./src/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
